@@ -1,0 +1,95 @@
+body {
+  background-color: lavender;
+}
+.container {
+  width: 900px;
+  position: relative;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.prev,
+.next {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.next {
+  right: 0;
+}
+.prev:hover,
+.next:hover {
+  transition: 0.3s;
+  background-color: black;
+  border-radius: 3px;
+}
+.n_text {
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.i_text {
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.dot {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin: 0px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active,
+.dot:hover {
+  transition: 0.3s;
+  background-color: #717171;
+}
+.dots_box {
+  text-align: center;
+  margin-top: 20px;
+}
+/*Animação na troca*/
+.wall {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
